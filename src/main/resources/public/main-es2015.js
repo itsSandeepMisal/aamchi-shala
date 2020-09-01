@@ -1779,7 +1779,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
 const environment = {
     production: true,
-    api: 'https://school-management-01.herokuapp.com/school/'
+    api: 'https://aamchi-shala.herokuapp.com/school/'
     //   api: 'http://localhost:9090/school/'
 };
 

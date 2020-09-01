@@ -3239,7 +3239,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var environment = {
       production: true,
-      api: 'https://school-management-01.herokuapp.com/school/' //   api: 'http://localhost:9090/school/'
+      api: 'https://aamchi-shala.herokuapp.com/school/' //   api: 'http://localhost:9090/school/'
 
     };
     /***/
