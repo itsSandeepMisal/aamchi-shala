@@ -19,33 +19,33 @@ import io.sandeep.student.service.StudentService;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping(value = "/school", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "/school/students", produces = MediaType.APPLICATION_JSON_VALUE)
 public class StudentController {
 
 	@Autowired
 	private StudentService studentService;
-	
-	@RequestMapping("/students")
+
+	@RequestMapping("")
 	public List<Student> getAllStudents() {
 		return studentService.getAllStudents();
 	}
 
-	@RequestMapping("/students/{id}")
+	@RequestMapping("/{id}")
 	public Student getStudent(@PathVariable Long id) {
 		return studentService.getStudent(id);
 	}
 	
-	@PostMapping(path = "/students", consumes = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(path = "", consumes = MediaType.APPLICATION_JSON_VALUE)
 	public Student addStudent(@RequestBody final StudentDto student) {
 		return studentService.addUpdateStudent(student);
 	}
 
-	@PutMapping("/students")
+	@PutMapping("")
 	public Student updateCourse(@RequestBody StudentDto student) {
 		return studentService.addUpdateStudent(student);
 	}
 	
-	@DeleteMapping("/students/{id}")
+	@DeleteMapping("/{id}")
 	public void deleteCourse(@PathVariable Long id) {
 		studentService.deleteStudent(id);
 	}
